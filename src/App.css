@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilo para el contenedor principal */
+.home-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo para las imágenes */
+.beer-image {
+  width: 500px; /* Ajusta el ancho según tus preferencias */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 20px; /* Espacio entre las imágenes */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para los enlaces */
+.beer-link {
+  text-decoration: none;
+  font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #333; /* Color de texto */
+  margin-bottom: 20px; /* Espacio entre los enlaces */
 }
+
+/* Cambia el color de los enlaces cuando el cursor esté encima */
+.beer-link:hover {
+  color: #007bff; /* Color de texto al pasar el cursor */
+}
+
+/* Estilo para el encabezado */
+.header {
+  background-color: rgb(52, 182, 251); /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto en el encabezado */
+  padding: 10px 0; /* Espaciado interno (arriba y abajo) */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo para el enlace "Home" */
+.header-link {
+  text-decoration: none;
+  font-size: 24px; /* Tamaño de fuente del enlace */
+  color: #fff; /* Color del texto en el enlace */
+}
+
+/* Cambia el color del enlace cuando el cursor esté encima */
+.header-link:hover {
+  color: #007bff; /* Color del texto al pasar el cursor */
+}
+
+/* Estilo para el contenedor principal */
+.beers-container {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la disposición a vertical */
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Estilo para las tarjetas de cerveza */
+.card {
+  display: flex; /* Establece la disposición de los elementos internos como flex */
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la imagen de cerveza */
+.card img {
+  width: 100px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: auto;
+  margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+/* Estilo para el contenido a la derecha de la imagen */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estilo para el botón "More info" */
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Cambia el color del botón cuando el cursor esté encima */
+.card button:hover {
+  background-color: #0056b3;
+}
+
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.details-container img {
+  width: 150px;
+  height: 400px;
+}
+
+.details-header {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+
+.header-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+
